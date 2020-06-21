@@ -16,6 +16,7 @@ clean:
 
 .PHONY: install-dependencies
 install-dependencies:
+	$(PIP) install --upgrade pip
 	$(PIP) install -r requirements.txt
 	$(PIP) install -r requirements-dev.txt
 

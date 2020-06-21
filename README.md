@@ -15,11 +15,11 @@ rm -rf .git
 git init .
 
 # Replace the placeholder name with the package name
-mv package-name $package_name
+mv placeholder-package-name $package_name
 
 for file in "Makefile setup.cfg $package_name/__main__.py"
 do
-    sed -i "s/placeholder-package-name/$package_name/g" Makefile
+    sed -i "s/placeholder-package-name/$package_name/g" $file
 done
 
 # I like to choose a default branch name
@@ -30,12 +30,12 @@ git add --all
 git commit -m "Initial commit"
 
 # Create and activate a virtual environment
-mkdir .venv
+python -m venv .venv
 source .venv/bin/activate
 
 # Install dependencies
 make install-dependencies
 
 # Find TODOs and address them manually
-grep "TODO" -R .
+git grep "TODO"
 ```
