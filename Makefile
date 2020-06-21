@@ -1,7 +1,7 @@
 PIP := pip
 PYTHON := python
 
-PACKAGE_NAME := placeholder-package-name
+PACKAGE_NAME := placeholder_package_name
 
 .PHONY: all
 all: clean install-dependencies typecheck tests build sdist wheel install

@@ -4,7 +4,7 @@ This file makes a module runnable with `python -m`.
 
 import sys
 
-from placeholder-package-name.console import Console
+from placeholder_package_name.console import Console
 
 def main(args):
     console = Console()

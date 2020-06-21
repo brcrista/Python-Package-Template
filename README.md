@@ -15,11 +15,14 @@ rm -rf .git
 git init .
 
 # Replace the placeholder name with the package name
-mv placeholder-package-name $package_name
+placeholder_name="placeholder_package_name"
+mv $placeholder_name $package_name
+mv $package_name/$placeholder_name.py $package_name/$package_name.py
+mv tests/test_$placeholder_name.py tests/test_$package_name.py
 
 for file in "Makefile setup.cfg $package_name/__main__.py"
 do
-    sed -i "s/placeholder-package-name/$package_name/g" $file
+    sed -i "s/placeholder_package_name/$package_name/g" $file
 done
 
 # I like to choose a default branch name
