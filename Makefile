@@ -22,7 +22,7 @@ install-dependencies:
 
 .PHONY: typecheck
 typecheck:
-	mypy $(PACKAGE-NAME) --strict
+	mypy $(PACKAGE_NAME) --strict
 	mypy tests --ignore-missing-imports --strict
 
 .PHONY: tests

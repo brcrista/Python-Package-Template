@@ -6,7 +6,7 @@ This is my template repository for Python packages.
 
 ```bash
 # Clone the repository
-package_name="new-package-name"
+package_name="new_package_name"
 git clone https://github.com/brcrista/Python-Package-Template.git $package_name
 
 # Start with clean Git history
