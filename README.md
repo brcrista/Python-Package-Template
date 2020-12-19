@@ -1,5 +1,8 @@
 # Python Package Template
 
+
+[![GitHub Actions build badge](https://github.com/brcrista/Python-Package-Template/workflows/CI/badge.svg)](https://github.com/brcrista/Python-Package-Template/actions?query=workflow%3ACI)
+
 This is my template repository for Python packages.
 
 ## Setup
